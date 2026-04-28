@@ -62,11 +62,11 @@ describe('PrepaidCreditCard', () => {
 
   // ATENCAO: este teste existe mas nao estava sendo executado antes.
   // O time deixou comentado. Descomente para ver o comportamento real.
-  // test('refund em Prepaid deveria retornar erro controlado, nao lancar excecao', () => {
-  //   const card = new PrepaidCreditCard({ number: '3333', holder: 'Carla', limit: 200 });
-  //   card.authorize(100);
-  //   expect(() => card.refund(50)).not.toThrow();
-  // });
+  test('refund em Prepaid deveria retornar erro controlado, nao lancar excecao', () => {
+    const card = new PrepaidCreditCard({ number: '3333', holder: 'Carla', limit: 200 });
+    card.authorize(100);
+    expect(() => card.refund(50)).not.toThrow();
+  });
 });
 
 describe('TransactionProcessor', () => {
