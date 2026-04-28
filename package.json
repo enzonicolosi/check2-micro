@@ -1,0 +1,26 @@
+{
+  "name": "fiap-2026-1-cp2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimundo PagaFacil - Checkpoint II - FIAP 3SIZ 2026.1 - Microservice and Web Engineering",
+  "workspaces": [
+    "cases/*"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "test:case1": "npm test --workspace=cases/01-credit-card-solid",
+    "test:case2": "npm test --workspace=cases/02-test-quality-suite",
+    "test:case3": "npm test --workspace=cases/03-tdd-refactor",
+    "test:case4": "npm test --workspace=cases/04-cache-aside",
+    "test:case5": "npm test --workspace=cases/05-circuit-breaker",
+    "test:case6": "npm test --workspace=cases/06-gateway-rate-limit",
+    "test:case7": "npm test --workspace=cases/07-saga-data",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

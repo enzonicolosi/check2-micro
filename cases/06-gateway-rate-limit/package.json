@@ -1,0 +1,17 @@
+{
+  "name": "case-06-gateway-rate-limit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gateway PagaFacil com Token Bucket e Round Robin.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  }
+}

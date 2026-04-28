@@ -1,0 +1,17 @@
+{
+  "name": "case-05-circuit-breaker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Circuit Breaker da PagaFacil com bug de transicao de estado.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  }
+}

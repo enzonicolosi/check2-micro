@@ -1,0 +1,11 @@
+node_modules/
+coverage/
+.DS_Store
+*.log
+dist/
+.env
+.vscode/
+.idea/
+docs/
+cases/07-saga-data/tests/saga.test.js
+docs/prova-cp2-enunciados.docx

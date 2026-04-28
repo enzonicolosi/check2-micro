@@ -1,0 +1,17 @@
+{
+  "name": "case-04-cache-aside",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cache aside do catalogo de produtos - com race condition e TTL errado.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  }
+}
