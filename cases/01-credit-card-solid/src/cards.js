@@ -31,7 +31,7 @@ class PremiumCreditCard extends CreditCard {
  */
 class PrepaidCreditCard extends CreditCard {
   refund(amount) {
-    throw new Error('Operacao nao suportada: cartao pre-pago nao aceita estorno');
+    return { refunded: false, reason: 'unsupported_for_prepaid' };
   }
 
   calculateFees(amount) {
