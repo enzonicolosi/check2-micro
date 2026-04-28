@@ -60,12 +60,10 @@ describe('PrepaidCreditCard', () => {
     expect(card.calculateFees(100)).toBe(0);
   });
 
-  // ATENCAO: este teste existe mas nao estava sendo executado antes.
-  // O time deixou comentado. Descomente para ver o comportamento real.
-  test('refund em Prepaid deveria retornar erro controlado, nao lancar excecao', () => {
+  test('Q04 refund em Prepaid retorna erro controlado', () => {
     const card = new PrepaidCreditCard({ number: '3333', holder: 'Carla', limit: 200 });
     card.authorize(100);
-    expect(() => card.refund(50)).not.toThrow();
+    expect(card.refund(50)).toEqual({ refunded: false, reason: 'unsupported_for_prepaid' });
   });
 });
 
